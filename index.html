@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CityRide Taxi Service</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🚖 CityRide</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#book">Book Ride</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Fast & Safe Taxi Service</h1>
+      <p>Book your ride in just a few clicks!</p>
+      <a href="#book" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/taxi.png"/>
+        <h3>City Rides</h3>
+        <p>Affordable rides across the city 24/7.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/airport.png"/>
+        <h3>Airport Transfers</h3>
+        <p>Timely pickups and drops to all airports.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/calendar--v1.png"/>
+        <h3>Daily Rentals</h3>
+        <p>Hourly bookings for flexible travel needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" class="booking">
+    <h2>Book Your Ride</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="text" placeholder="Pickup Location" required />
+      <input type="text" placeholder="Drop Location" required />
+      <input type="datetime-local" required />
+      <button type="submit">Confirm Booking</button>
+    </form>
+    <div id="confirmation" class="confirmation-message"></div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91-90000-00000<br>✉️ support@cityride.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CityRide Taxi. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

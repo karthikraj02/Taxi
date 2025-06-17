@@ -1,0 +1,153 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #ffd700;
+}
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1583267749711-2f98a55ee94a') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.btn {
+  background: #ffd700;
+  padding: 12px 24px;
+  color: #000;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  height: 40px;
+  margin-bottom: 15px;
+}
+.booking {
+  padding: 50px 20px;
+  text-align: center;
+  background: #e9ecef;
+}
+.booking form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+.booking input, .booking button {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.booking button {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.confirmation-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+.contact {
+  padding: 40px 20px;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
